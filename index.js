@@ -23,7 +23,7 @@ const {sequelize}=require('./src/database');
 
 server.listen(PORT, async()=>{
     try {
-        await sequelize.sync({force:true})
+        await sequelize.sync({force:false})
         console.log(`Server is listening in Port: ${PORT},✔️
     Everything is Good! 😉`)
     } catch (error) {
