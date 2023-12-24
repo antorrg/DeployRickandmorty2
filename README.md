@@ -1,2 +1,4 @@
-# DeployRickandmorty2
-Copia de server listo para deployar
+# Server de prueba
+[English version]('/assets/README.md')
+
+[Spanish version](./archivosMok/assets/readmeAuth.md)
