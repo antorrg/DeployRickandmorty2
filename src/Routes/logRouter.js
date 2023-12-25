@@ -8,13 +8,13 @@ const usersRouter =Router();
 //?El endpoint de la ruta es /log/
 
 //usersRouter.get('/favorite/user', verifyToken, favUsers );
-usersRouter.get('/favorite',  favUsers );
+usersRouter.get('/favorite',  verifyToken, favUsers );
 usersRouter.get('/favorite/verify', favUsers2)
 
 usersRouter.post('/favorite', verifyToken, addFav);
 usersRouter.post('/login',auth);
 //usersRouter.post('/favorites',)
-usersRouter.get('/users',verifyToken, getUsers);
+usersRouter.get('/users', getUsers);
 usersRouter.put('/users/:id', verifyToken, updateUsersRol)
 usersRouter.delete('/favorite/:id', verifyToken, deleteFav);
 
