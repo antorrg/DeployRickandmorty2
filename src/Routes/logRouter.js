@@ -8,7 +8,7 @@ const usersRouter =Router();
 //?El endpoint de la ruta es /log/
 
 //usersRouter.get('/favorite/user', verifyToken, favUsers );
-usersRouter.get('/favorite', verifyToken, favUsers );
+usersRouter.get('/favorite',  favUsers );
 usersRouter.get('/favorite/verify', favUsers2)
 
 usersRouter.post('/favorite', verifyToken, addFav);
