@@ -5,9 +5,10 @@ const PostFavorite=require('./models/favorite')
 
 require('dotenv').config();
 
-const{DB_USER, DB_PASS,DB_HOST,DB_NAME}=process.env;
+const{PGUSER, PGPASSWORD,PGHOST, PGPORT,PGDATABASE}=process.env;
 
-const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASS}@${DB_HOST}/${DB_NAME}`,
+
+const sequelize = new Sequelize(`postgres://${PGUSER}:${PGPASSWORD}@${PGHOST}:${PGPORT}/${PGDATABASE}`,
 {logging:false, native: false}
 );
 
